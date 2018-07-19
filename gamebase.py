@@ -16,15 +16,16 @@ loadPrcFileData("",
 from direct.showbase.ShowBase import ShowBase
 from direct.gui.DirectGui import *
 import sys
-sys.path.append(r"C:\Users\avise\Desktop\Games\RenderPipeline-master")
-from rpcore import RenderPipeline, SpotLight
-rp = RenderPipeline()
+#sys.path.append(r"C:\Users\avise\Desktop\Games\RenderPipeline-master")
+#from rpcore import RenderPipeline, SpotLight
+#rp = RenderPipeline()
 
 class GameBase(ShowBase):
     def __init__(self, autoSetup = True, debug = False):
-        rp.set_loading_screen_image("screenshot7.png")
-        rp.create(self)
-        rp.daytime_mgr.time = 0.43
+        #rp.set_loading_screen_image("screenshot7.png")
+        #rp.create(self)
+        #rp.daytime_mgr.time = 0.43
+        ShowBase.__init__(self)
         
         if autoSetup:
             self.setupLighting()
