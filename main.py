@@ -2,7 +2,7 @@ from panda3d.core import *
 from direct.showbase.ShowBase import *
 from direct.fsm.FSM import FSM
 from direct.gui.OnscreenText import OnscreenText
-from gamebase import GameBase, Menu, rp
+from gamebase import GameBase, Menu  #, rp
 from missionscreen import MissionScreen
 from debrief import Debrief
 from hud import Hud
@@ -191,7 +191,7 @@ class World:
         text.hide()
         del text
         
-        rp.prepare_scene(self.terrain)
+        #rp.prepare_scene(self.terrain)
 
         self.loaded = True
 
